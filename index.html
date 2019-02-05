@@ -5,48 +5,72 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon shortcut" type="images/ico" href="icon-SSF.png">
+	<link rel="stylesheet" href="./styles/main.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700" rel="stylesheet">
+	
 	<title>Sam Saks-Fithian Portfolio | Home</title>
 </head>
 
 <body>
-	<h1>Sam Saks-Fithian's Portfolio</h1>
-
-	<nav>
-		<h2>Table of Contents</h2>
-		<ol>
-			<li><a href="#overview">Overview/About</a></li>
-			<li><a href="#contact">Contact Info</a></li>
-			<li><a href="#resume">Resume</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#blog">Blog</a></li>
-		</ol>
-	</nav>
+	<section id="splash">
+		<div class="overlay"></div>
+		<h2>Welcome</h2>
+	</section>
+	<header>
+		<h1>Sam Saks-Fithian</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#resume">Resumé</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#blog">Blog</a></li>
+			</ul>
+		</nav>
+	</header>
 
 	<!-- <br> -->
-
-	<section id="overview">
-		<h2>Overview/About</h2>
-		<img src="./picofself.jpg" alt="Picture of Sam" width="15%">
+	<!-- <div class="scrolling-box"> -->
+	<section id="about">
+		<h2>About</h2>
+		<img src="./picofself.jpg" alt="Picture of Sam" width="20%">
 		<article>
-			Bio here
+			Bio here <br>
+			my name sam and i best ever thnk u
 		</article>
 	</section>
 
 	<section id="contact">
 		<h2>Contact Information</h2>
-		<!-- make this a list -->
-		<b>Work Email:</b> <a href="mailto:ssaksfithian@talentpath.com">ssaksfithian@talentpath.com</a> <br>
-		<b>Personal Email:</b> <a href="mailto:samsaksfithian@gmail.com">samsaksfithian@gmail.com</a> <br>
-		<b>Phone:</b> (773) 816-9992 <br>
-		<br>
-		<a href="https://www.linkedin.com/in/sam-saks-fithian/">LinkedIn</a> | <a href="https://github.com/samsaksfithian">GitHub</a>
+		<ul>
+			<li>
+				<b>Work Email:</b> <a href="mailto:ssaksfithian@talentpath.com">ssaksfithian@talentpath.com</a>
+			</li>
+			<li>
+				<b>Personal Email:</b> <a href="mailto:samsaksfithian@gmail.com">samsaksfithian@gmail.com</a>
+			</li>
+			<li>
+				<b>Phone:</b> <a href="tel:7738169992"> (773) 816-9992</a>
+			</li>
+		</ul>
+		<div id="social">
+			<a href="https://www.linkedin.com/in/sam-saks-fithian/" target="_blank" padding-left="0px">
+				<img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG16.png" alt="LinkedIn">
+			</a>
+			<a href="https://twitter.com/QuomodoDragon" target="_blank">
+				<img src="https://pngimg.com/uploads/twitter/twitter_PNG34.png" alt="Twitter">
+			</a>
+			<a href="https://github.com/samsaksfithian" target="_blank">
+				<img src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67" alt="GitHub">
+			</a>
+		</div>
 	</section>
 
 	<section id="resume">
-		<h2>Resume</h2>
+		<h2>Resumé</h2>
 		<a href="./SamSaksFithian_Resume-ComputerScience.pdf" target="_blank">Computer Science Resume</a>
 		<br>
-		<iframe src="./SamSaksFithian_Resume-ComputerScience.pdf" frameborder="0" width="90%" height="350px"></iframe>
+		<iframe src="./SamSaksFithian_Resume-ComputerScience.pdf" frameborder="0" width="100%" height="1000px"></iframe>
 	</section>
 
 	<section id="projects">
@@ -58,7 +82,8 @@
 		<h2>Blog</h2>
 		Section for blog here 
 	</section>
-	
+	<!-- </div> -->
+
 	<footer>
 		<br>
 		Copyright 2019 Sam Saks-Fithian

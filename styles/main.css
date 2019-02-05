@@ -1,0 +1,31 @@
+@import "./resets.css";
+@import "./splash.css";
+@import "./header.css";
+@import "./section.css";
+
+/* ============================================== */
+/* Custom CSS */
+
+/* General */
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    /* background-color: rgba(255, 140, 50, 0.5); */
+    background: linear-gradient(0deg, rgba(180,58,100,0.3) 0%, rgba(253,29,29,0.3) 5%, rgba(252,225,69,0.3) 100%);
+    
+}
+
+/* .scrolling-box {
+    scroll-behavior: smooth;
+    display: block;
+    overflow-y: scroll;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.4rem;
+    margin-top: 1.3rem;
+    font-family: 'Lato', sans-serif;
+}
