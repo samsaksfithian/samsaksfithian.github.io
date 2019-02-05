@@ -1,11 +1,14 @@
 /* Splash */
 #splash {
+    margin: 0;
     height: 100vh;
-    background-image: url(https://www.maxim.com/.image/t_share/MTU5MDQ2NzEyNDc4OTM0ODA4/john-mayer-promo.jpg);
+    background-image: url("../binaryrain.png");
+    /* background-image: url("../circuitboard_robot.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     
-    display: none;
+    /* display: none; */
 }
 
 #splash h2 {
