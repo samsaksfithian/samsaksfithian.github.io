@@ -2,6 +2,7 @@
 /* Section */
 section {
     margin: 0rem .6rem;
+    line-height: 1.6;
 }
 
 section ul {
@@ -17,10 +18,11 @@ section ul li a img {
 /* About */
 #info {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 #info .flex-image {
-    flex: 1 1 20%;
+    flex: 0 1 40%;
 }
 
 #info img {
@@ -28,7 +30,10 @@ section ul li a img {
 }
 
 #info article {
-    flex: 1 1 80%
+    flex: 1 1 70%;
+    padding: 0px 1.5rem;
+    font-size: 1.1rem;
+    max-width: 38rem;
 }
 
 /* ===================================================== */

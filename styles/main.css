@@ -14,8 +14,9 @@
 
 body {
     /* background-color: rgba(255, 140, 50, 0.5); */
-    background: linear-gradient(0deg, rgba(180,58,100,0.3) 0%, rgba(253,29,29,0.3) 5%, rgba(252,225,69,0.3) 100%);
-    
+    background: linear-gradient(0deg, hsla(339, 51%, 47%, 0.2) 0%, hsla(0, 98%, 55%, 0.2) 5%, hsla(51, 97%, 63%, 0.2) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 /* .scrolling-box {
@@ -25,7 +26,11 @@ body {
 } */
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0.4rem;
-    margin-top: 1.3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 1.1rem;
     font-family: 'Lato', sans-serif;
+}
+
+footer {
+    margin: 2rem 3px 2px 0px;
 }
