@@ -1,3 +1,4 @@
+/* ===================================================== */
 /* Section */
 section {
     margin: 0rem .6rem;
@@ -7,13 +8,34 @@ section ul {
     padding-left: 15px;
 }
 
-#contact ul {
-    list-style: none;
-}
-
-ul li a img {
+section ul li a img {
     width: 1rem;
     /* position: center; */
+}
+
+/* ===================================================== */
+/* About */
+#info {
+    display: flex;
+}
+
+#info .flex-image {
+    flex: 1 1 20%;
+}
+
+#info img {
+    max-width: 100%;
+}
+
+#info article {
+    flex: 1 1 80%
+}
+
+/* ===================================================== */
+/* Contact Info */
+
+#contact ul {
+    list-style: none;
 }
 
 #social {

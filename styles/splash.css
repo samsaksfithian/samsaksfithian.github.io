@@ -1,14 +1,18 @@
 /* Splash */
 #splash {
     margin: 0;
-    height: 100vh;
+    height: calc(100vh - 4rem);
     background-image: url("../binaryrain.png");
     /* background-image: url("../circuitboard_robot.jpg"); */
+    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
     /* display: none; */
+    /* display: flex;
+	justify-content: center;
+	align-items: center; */
 }
 
 #splash h2 {
@@ -25,11 +29,11 @@
     background: radial-gradient(circle, rgba(0,0,0,0.6), rgba(0,0,0,0) 25%);
 }
 
-#splash .overlay {
+/* #splash .overlay {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.25)
-}
+} */
