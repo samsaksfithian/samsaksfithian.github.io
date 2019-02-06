@@ -3,7 +3,8 @@ header {
     height: 4rem;
     line-height: 4rem;
     background-color: #222;
-    color: #FFF;
+    /* color: #FFF; */
+    color: hsl(34, 30%, 85%);
     padding-left: 1rem;
     padding-right: 0.5rem;
 
@@ -22,7 +23,8 @@ header h1, header h2 {
 
 header h1 a {
     text-decoration: none;
-    color: #FFF;
+    /* color: #FFF; */
+    color: hsl(34, 25%, 88%);
 }
 
 nav, nav ul, nav ul li, nav ul li a {

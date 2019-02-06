@@ -21,12 +21,15 @@
     right: 0;
     transform: translateY(50vh);
     
-    color: #FFF;
+    /* color: #FFF; */
+    color: hsl(34, 25%, 88%);
     font-size: 3rem;
     text-align: center;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 3px hsla(34, 50%, 10%, 0.5);
 
-    background: radial-gradient(circle, rgba(0,0,0,0.6), rgba(0,0,0,0) 25%);
+    /* background: radial-gradient(circle, rgba(0,0,0,0.6), rgba(0,0,0,0) 25%); */
+    background: radial-gradient(circle, hsla(34, 60%, 10%,0.6), hsla(34, 60%, 10%, 0) 25%);
+
 }
 
 /* #splash .overlay {
