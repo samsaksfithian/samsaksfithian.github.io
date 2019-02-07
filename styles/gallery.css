@@ -1,0 +1,99 @@
+/* ===================================================== */
+/* CSS-only Gallery */
+
+/* Slide Gallery */
+.slide-gallery {
+    height: var(--galHeight);
+    width: calc(1.35 * var(--galHeight));
+    border: 3px solid black;
+    display: flex;
+    overflow-x: hidden;
+
+    --galHeight: 400px;
+}
+
+.image-container {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    animation: animateImage 20s linear 0s infinite alternate;
+}
+
+.image-container img {
+    object-fit: scale-down;
+}
+
+@keyframes animateImage {
+    0% { transform: translateX(0) }
+    30% { transform: translateX(0) }
+    40% { transform: translateX(calc(-1.35 * var(--galHeight))) }
+    50% { transform: translateX(calc(-1.35 * var(--galHeight))) }
+    60% { transform: translateX(calc(calc(-1.35 * var(--galHeight)) * 2)) } 
+    70% { transform: translateX(calc(calc(-1.35 * var(--galHeight)) * 2)) } 
+    80% { transform: translateX(calc(calc(-1.35 * var(--galHeight)) * 3)) } 
+    100% { transform: translateX(calc(calc(-1.35 * var(--galHeight)) * 3)) }   
+}
+
+/* ===================================================== */
+/* Fade Gallery */
+
+.fade-gallery {
+    height: var(--galHeight);
+    width: calc(1.35 * var(--galHeight));
+    border: 3px solid black;
+    position: relative;
+
+    --galHeight: 400px;
+    --fadeTime: 4s;
+}
+
+.fade-container {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-shrink: 0;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+.fade-container h2 {
+    position: absolute;
+    padding: 0px 5px;
+    color: hsl(34, 30%, 85%);
+    text-shadow: 2px 2px 2px hsla(34, 100%, 50%, 0.7);
+    transform: translateX(-80px) translateY(-20px);
+    border: 2px solid hsla(34, 100%, 50%, 0.7);
+}
+
+.fade-container:nth-child(2) {
+    animation: fadeImage var(--fadeTime) ease-in calc(var(--fadeTime) * 1) 1 normal both;
+}
+
+.fade-container:nth-child(3) {
+    animation: fadeImage var(--fadeTime) ease-in calc(var(--fadeTime) * 2) 1 normal both;
+}
+
+.fade-container:nth-child(4) {
+    animation: fadeImage var(--fadeTime) ease-in calc(var(--fadeTime) * 3) 1 normal both;
+}
+
+.fade-container img {
+    flex-grow: 1;
+    object-fit: scale-down;
+}
+
+@keyframes fadeImage {
+    0% { opacity: 0; }
+    50% {opacity: 1;}
+    100% { opacity: 1; }
+}
